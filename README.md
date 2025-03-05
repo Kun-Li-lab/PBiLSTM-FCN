@@ -1,4 +1,16 @@
 # PBiLSTM-FCN
+Execution steps:
+1. Download the dataset in ". txt. gz" format from the Uniprot official website
+2. Run data.Py, which can preprocess the dataset and generate three dataset files: bp.Pkl, mf.Pkl, and cc.Pkl
+3. Create a new folder directly in the same level directory and name it "data". Place go.obo and the three dataset files generated in step 2 into the "data" folder
+4. Run PBiLSM-FCN.py
+
+The 'go. obo' file is used to store all GO term relationships. To download the latest 'go. obo' file, please follow these steps:
+1. Enter the official website http://geneontology.org/docs/download-ontology/
+2. See the item with Name "go. obo" and a link displayed next to it http://purl.obolibrary.org/obo/go.obo
+3. Right click http://purl.obolibrary.org/obo/go.obo Select 'Save Link As' to download the latest version of go.obo file
+
+
 Dependencies
 The code was developed and tested using python 3.7.
 
